@@ -1,0 +1,1 @@
+When playing this game, be sure to open up the developer tools via F12. Then, you'll be able to see the action in the console.
