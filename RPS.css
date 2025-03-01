@@ -1,0 +1,154 @@
+* {
+    font-family: sans-serif;
+    background: #EEF2F7;
+    color: rgb(76, 67, 78);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+#game-header {
+    font-size: 50px;
+}
+
+.result-display {
+    padding: 0px;
+}
+
+#img-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+button {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: none;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.result-display {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#results {
+    margin-top: 150px;
+}
+
+#replay-btn {
+    padding: 15px 60px;
+    border-radius: 40px;
+    background:linear-gradient(to right,rgb(42, 241, 165), rgb(26, 242, 250));
+    font-family: "Open Sans";
+    font-size: 30px;
+}
+
+@media screen and (max-width: 300px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    #game-header {
+        font-size: 10px;
+    }
+    p {
+        font-size: 5px;
+        margin: 5px;
+    }
+    #img-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .choice {
+        width: 100px;
+        height: 100px;
+    }
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    #replay-button {
+        padding: 15px 25px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #game-header {
+        font-size: 30px;
+    }
+    p {
+        font-size: 5px;
+        margin: 5px;
+    }
+    #img-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .choice {
+        width: 100px;
+        height: 100px;
+    }
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    #replay-btn {
+        padding: 10px 30px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 850px) and (orientation: landscape) { 
+    #game-header {
+        font-size: 30px;
+    }
+    p {
+        margin: 0px;
+    }
+    #img-row {
+        display: flex;
+        gap: 40px;
+    }
+    .choice {
+        width: 150px;
+        height: 150px;
+    }
+    img {
+        width: 120px;
+        height: 120px;
+    }
+    #replay-btn {
+        padding: 10px 30px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+}
