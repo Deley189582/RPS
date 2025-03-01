@@ -1,15 +1,26 @@
-=<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src = "./javascript.js">
-        console.log("Hello world")
-    </script>
+    <-- <link rel="stylesheet" href="style.css"> -->
+    <-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"> -->
+    <title>Rock Paper Scissors!</title>
 </head>
 <body>
-    
+    <div id="container">
+        <h1 id="game-header">Rock Paper Scissors</h1>
+        <p class="result-display" id="player-move"></p>
+        <p class="result-display" id="computer-move"></p>
+        <div id="img-row">
+            <button class="choice" id="rock"><img src="img/rock.jpg" alt="A piece of rock"></button>
+            <button class="choice" id="paper"><img src="img/paper.jpg" alt="A piece of paper with a tape on top"></button>
+            <button class="choice" id="scissors"><img src="img/scissors.jpg" alt="A pair of scissors"></button>
+        </div>
+        <p class="result-display" id="results"></p>
+        <p class="result-display" id="score"></p>
+        <button id="replay-btn">Reset Game</button>
+    </div>
+    <script src="rockpaperscissors.js"></script>
 </body>
 </html>
-<!-- The index.html file is what and how this page will function. The magic happens over at the javascript.js page. -->
